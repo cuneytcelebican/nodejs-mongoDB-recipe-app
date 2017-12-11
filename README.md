@@ -1,9 +1,13 @@
 # nodejs-mongoDB-recipe-app
 
 How does it launch and run?
+
 After locating the folder in the terminal
+
 npm install
+
 npm start
+
 node myServer.js
 
 To open in the browser

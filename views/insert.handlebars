@@ -1,0 +1,69 @@
+<div class="food-container-details">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="white-box edit-recipe-box">
+                <span class="page-title">Add new recipe</span> 
+
+                <form class="edit-recipe-form" method="POST" action="../insert">
+                    <div class="form-group">
+                        <label for="recipeId">Recipe Id</label>
+                        <input type="text" class="form-control" disabled name="recipeId" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipename">Recipe Name</label>
+                        <input type="text" class="form-control" name="recipename" value=" ">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contributor">Contributor</label>
+                        <input type="text" class="form-control" name="contributor" value="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <input type="text" class="form-control" name="category" value="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" rows="5" name="description"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ingredients">Ingredients</label>
+                        <textarea class="form-control" rows="5" name="ingredients"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="directions">Directions</label>
+                        <textarea class="form-control" rows="5" name="directions"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="spices">Spices</label>
+                        <textarea class="form-control" rows="5" name="spices"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="source">Source</label>
+                        <input type="text" class="form-control" name="source" value="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="rating">Rating</label>
+                        <input type="text" class="form-control" name="rating" value="">
+                    </div>
+
+                    <div class="edit-bottom-buttons">
+                        <a href="/recipe" class="btn btn-default">Cancel</a>
+                        <button type="submit" class="btn btn-success">Save</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div class="col-md-4">
+            <div class="burger"><img src="../img/burger.jpg"></div>
+        </div>
+    </div>
+</div>

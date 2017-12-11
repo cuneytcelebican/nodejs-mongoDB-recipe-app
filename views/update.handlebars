@@ -1,0 +1,69 @@
+<div class="food-container-details">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="white-box edit-recipe-box">
+                <span class="page-title">Editing - {{items.recipeName}}</span> 
+
+                <form class="edit-recipe-form" method="POST" action="../update/{{items.id}}">
+                    <div class="form-group">
+                        <label for="recipeId">Recipe Id</label>
+                        <input type="text" class="form-control" disabled name="recipeId" value="{{items.id}} ">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipename">Recipe Name</label>
+                        <input type="text" class="form-control" name="recipename" value="{{items.recipeName}} ">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contributor">Contributor</label>
+                        <input type="text" class="form-control" name="contributor" value="{{items.contributor}}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <input type="text" class="form-control" name="category" value="{{items.category}}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" rows="5" name="description">{{items.description}}</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ingredients">Ingredients</label>
+                        <textarea class="form-control" rows="5" name="ingredients">{{items.ingredients}}</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="directions">Directions</label>
+                        <textarea class="form-control" rows="5" name="directions">{{items.directions}}</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="spices">Spices</label>
+                        <textarea class="form-control" rows="5" name="spices">{{items.spices}}</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="source">Source</label>
+                        <input type="text" class="form-control" name="source" value="{{items.source}}">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="rating">Rating</label>
+                        <input type="text" class="form-control" name="rating" value="{{items.rating}}">
+                    </div>
+
+                    <div class="edit-bottom-buttons">
+                        <a href="/recipe" class="btn btn-default">Cancel</a>
+                        <button type="submit" class="btn btn-success">Save</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div class="col-md-4">
+            <div class="burger"><img src="../img/burger.jpg"></div>
+        </div>
+    </div>
+</div>

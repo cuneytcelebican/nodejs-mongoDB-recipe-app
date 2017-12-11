@@ -1,0 +1,41 @@
+<!-- All recipes list in this for loop -->
+<div class="col-md-8 row">
+    
+    {{#if success_msg}}
+    <div class="col-md-12">
+        <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            {{success_msg}}
+        </div>
+    </div>
+    {{/if}}
+
+    {{#if error_msg}}
+    <div class="col-md-12">
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            {{error_msg}}
+        </div>
+    </div>
+    {{/if}}
+    {{#each items}}
+        <div class="foods col-md-6" onclick="window.open('recipe/{{id}}')">
+            <div class="white-box">
+                <div class="food-picture">
+                    <span class="recipe-name">{{category}}</span>
+                </div>
+                <div class="food-title">
+                    {{recipeName}} 
+                </div>
+                <div class="food-description-out">
+                    {{description}}
+                </div> 
+            </div>
+        </div>
+    {{/each}}
+</div>
+
+<!-- Advertisement area just for design -->
+<div class="col-md-4">
+    <div class="burger"><img src="../img/burger.jpg"></div>
+</div>

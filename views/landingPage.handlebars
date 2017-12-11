@@ -1,0 +1,32 @@
+<div class="landing-content">
+    <div class="col-md-6">
+        <div class="lp-text-content">
+            <h1>Cooking just got easier</h1>
+            <p>
+                FoodX is the online destination in Canada to feature chef recipes, 
+                full shows, tons of expert cooking tips. We have thousands of recipes!
+            </p>
+            <a class="btn btn-success" href="/users/login">Login</a>
+            <a class="btn btn-warning" href="/users/signin">Signin</a>
+        </div>
+    </div>
+</div>
+
+{{#if success_msg}}
+<div class="alert alert-success alert-dismissible logout-message" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true" class="close-button">&times;</span></button>
+    {{success_msg}}
+</div>
+{{/if}}
+{{#if error_msg}}
+<div class="alert alert-warning alert-dismissible logout-message" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    {{error_msg}}
+</div>
+{{/if}}
+{{#if error}}
+<div class="alert alert-warning alert-dismissible logout-message" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    {{error}}
+</div>
+{{/if}}

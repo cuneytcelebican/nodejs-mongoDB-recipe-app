@@ -1,0 +1,61 @@
+<div class="food-container-details">
+    <div class="row">
+        {{#if success_msg}}
+        <div class="col-md-12">
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                {{success_msg}}
+            </div>
+        </div>
+        {{/if}}
+        <div class="col-md-3">
+            <div class="food-picture food-details-image">
+                <span class="recipe-name">{{items.category}}</span>
+            </div>
+            <div class="useful-links">
+                <ul>
+                    <li><a href="/update/{{items.id}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit this recipe</a></li>
+                    <li><a href="/delete/{{items.id}}"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete this recipe</a></li>
+                    <li><a href="/recipe"><i class="fa fa-angle-left" aria-hidden="true"></i> Return recipes</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="white-box food-details">
+                <div class="food-title-desc">
+                    {{items.recipeName}} 
+                    <span class="label label-danger label-rating"><i class="fa fa-star" aria-hidden="true"></i> {{items.rating}}</span>
+                </div>
+
+                <div class="food-contributor">{{items.contributor}}</div>
+
+                <div class="food-description">
+                    <span class="description-title">description</span>
+                    {{items.description}}
+                </div>
+
+                <div class="food-description">
+                    <span class="description-title">ingredients</span>
+                    {{items.ingredients}}
+                </div>
+
+                <div class="food-description">
+                    <span class="description-title">directions</span>
+                    {{items.directions}}
+                </div>
+
+                <div class="food-description">
+                    <span class="description-title">spices</span>
+                    {{items.spices}}
+                </div>
+
+                <div class="food-description">
+                    <span class="description-title">source</span>
+                    {{items.source}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
